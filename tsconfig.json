@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+
+  "compilerOptions": {
+    //"outDir": "./js",
+    "outFile": "./wwwroot/js/app.js",
+    "strict": true,
+    "rootDir": "./",
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2021",
+    "lib": [
+      "es2021",
+      "dom"
+    ]
+  },
+
+  "include": [
+    "./wwwroot/src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

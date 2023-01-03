@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RSA JavaScript - C# Tester</title>
+
+</head>
+<body>
+    <h1>RSA JavaScript - C# Tester</h1>
+    <p>Type a message here</p>
+    <ul>
+        <li>RSA: max. 256 bytes - after UTF8 encoding = around 180 chars</li>
+        <li>AES: Message can be as long as system resources allow</li>
+    </ul>
+    <p>
+        <textarea type="text" id="message" style="width: 600px; height: 100px;">A top secret message...</textarea>
+    </p>
+    <br />
+
+    <p>RSA encrypt and decrypt</p>
+    <p>
+        <button onclick="doRunRsaDecryptTest()">RSA - Encrypt in JS and Decrypt in C# (Server)</button>
+    </p>
+    <p>
+        <button onclick="doRunRsaEncryptTest()">RSA - Encrypt in C# (Server) and Decrypt in JS</button>
+    </p>
+    <br />
+
+    <p>AES encrypt and decrypt</p>
+    <p>
+        <button onclick="duRunAesTest()">AES CBC - Encrypt in JS decrypt in C# and same reverse</button>
+    </p>
+
+    <br />
+
+    <p>Result and log</p>
+    <p id="result" style="color: orange; font-weight: bold; margin-top: 30px;"></p>
+    <div id="log" style="color: blue; font-weight: bold; margin-top: 30px; width: 90%; overflow: auto; word-wrap: break-word; "></div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
